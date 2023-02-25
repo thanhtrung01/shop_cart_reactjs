@@ -126,7 +126,7 @@ const Navbar = () => {
             <div className="cart ml-5" >
               {isUser.user && (
                 <>
-                  <button className='btn btn-ghost normal-case text-xl btn-warning' onClick={logout}>Logout</button>
+                  <button className="hover:text-yellow-500" onClick={logout}>Logout</button>
                 </>)}
             </div>
           </div>

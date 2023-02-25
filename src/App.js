@@ -43,7 +43,7 @@ function App() {
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/details/:id" element={<Details />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/profile" element={user==="true" ? <Profile /> : <Navigate to="/" />} />
+        <Route path="/profile" element={user!==null ? <Profile /> : <Navigate to="/" />} />
         <Route path="/admin" element={admin==="true" ? <Admin /> : <Navigate to="/" />} />
         <Route path='/login' element={!user ? <Login /> :  <Navigate to="/" />} />
         <Route path='/register' element={!user ? <Register /> : <Navigate to="/" />} />
